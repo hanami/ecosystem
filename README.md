@@ -10,27 +10,27 @@ This means we want to ensure common libraries work well with Hanami,
 
 ## Guides to write and publish
 ### Authentication
-  - [ ] local authentication (Warden?)
-  - [ ] [Rodauth](https://github.com/davydovanton/hanami-rodauth) (@davydovanton)
-  - [ ] omniauth (@davydovanton)
+  - [ ] `warden`
+  - [ ] [`rodauth`](https://github.com/davydovanton/hanami-rodauth) (@davydovanton)
+  - [ ] `omniauth` (@davydovanton)
 
 ### Authorization
-  - [ ] cancancan
-  - [ ] pundit? (depends on ActiveSupport)
-  - [ ] authority? (depends on ActiveSupport)
+  - [ ] `cancancan`
+  - [ ] `pundit`? (depends on ActiveSupport)
+  - [ ] `authority`? (depends on ActiveSupport)
 
 ### Testing
-  - [ ] [rspec-hanami](https://github.com/davydovanton/rspec-hanami) (@davydovanton)
-  - [ ] [VCR](https://github.com/vcr/vcr) (@davydovanton)
-  - [ ] [Webmock](https://github.com/bblimke/webmock)
-  - [ ] [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner)
+  - [ ] [`rspec-hanami`](https://github.com/davydovanton/rspec-hanami) (@davydovanton)
+  - [ ] `vcr` (@davydovanton)
+  - [ ] `webmock`
+  - [ ] `database_cleaner`
 
 ### API's
   - [ ] API documentation
-  - [ ] JSON response
-    - [ ] [Jbuilder](https://github.com/vladfaust/hanami-jbuilder)
-    - [ ] roar
-  - [ ] [JSON API™](http://jsonapi-rb.org/) (@beauby)
+  - [ ] JSON responses
+    - [ ] [`jbuilder`](https://github.com/vladfaust/hanami-jbuilder)
+    - [ ] `roar`
+  - [ ] [JSON API™](https://github.com/jsonapi-rb/jsonapi-hanami) (@beauby)
 
 ### File Uploads
   - [ ] AWS S3, directly (@beauby)
@@ -40,46 +40,42 @@ This means we want to ensure common libraries work well with Hanami,
   - [ ] hanami-assets (including limitations)
   - [ ] webpack (@davydovanton)
   - [ ] [bootstrap](https://github.com/davydovanton/hanami-bootstrap) (@davydovanton)
-
-### Front-end frameworks
-  - [ ] React (@davydovanton)
-  - [ ] Ember
-  - [ ] Angular
-  - [ ] Elm
-  - [ ] Vue (@davydovanton)
+  - [ ] front-end frameworks, mention by name React, Ember, Angular, Elm, Vue, etc. (@davydovanton)
 
 ### Server hosting
   - [ ] logging
-  - [ ] deploy
+  - [ ] deploying
   - [ ] server monitoring
 
 ### Background jobs
-  - [ ] sidekiq
-  - [ ] resque
+  - [ ] `sidekiq`
+  - [ ] `resque`
 
 ### Multiple language support
-  - [ ] i18n
+  - [ ] `i18n`
 
 ### Rack-compatibility
   - [ ] Mounting Hanami into other Rack-compatible frameworks
   - [ ] Mounting other Rack-compatible frameworks into Hanami
 
 ### Architecture tips
-  - [ ] service object, e.g. `Hanami::Interactor` (@davydovanton & @cllns)
-  - [ ] presenters
-  - [ ] trailblazer (@apotonick?)
-  - [ ] dry-rb libraries (and ROM?)
+  - [ ] `Hanami::Interactor` (@davydovanton & @cllns)
+  - [ ] `Hanami::Presenter`
+  - [ ] Trailblazer (@apotonick?)
+  - [ ] `dry-rb` libraries
 
 ### Real-time web
   - [ ] web sockets
 
 ### Alternative ORM's
-  - [ ] NoSQL?
-  - [ ] Sequel?
+  - [ ] `rom` (directly)
+  - [ ] `sequel`?
+  - [ ] `mongoid`?
 
 ### Others
   - [ ] email preview (@davydovanton)
   - [ ] URL slugs
   - [ ] pagination
-  - [ ] state machine
-  - [ ] A/B testing (?)
+  - [ ] state machines (@davydovanton?)
+  - [ ] request throttling (rack-attack?)
+  - [ ] A/B testing?
