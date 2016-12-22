@@ -33,7 +33,8 @@ This means we want to ensure common libraries work well with Hanami,
   - [ ] [JSON API™](http://jsonapi-rb.org/) (@beauby)
 
 ### File Uploads
-  - [ ] [hanami-shrine](https://github.com/katafrakt/hanami-shrine)
+  - [ ] AWS S3, directly (@beauby)
+  - [ ] shrine (https://github.com/katafrakt/hanami-shrine)
 
 ### Assets
   - [ ] hanami-assets (including limitations)
