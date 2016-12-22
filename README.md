@@ -14,6 +14,11 @@ This means we want to ensure common libraries work well with Hanami,
   - [ ] [Rodauth](https://github.com/davydovanton/hanami-rodauth) (@davydovanton)
   - [ ] omniauth (@davydovanton)
 
+### Authorization
+  - [ ] cancancan
+  - [ ] pundit? (depends on ActiveSupport)
+  - [ ] authority? (depends on ActiveSupport)
+
 ### Testing
   - [ ] [rspec-hanami](https://github.com/davydovanton/rspec-hanami) (@davydovanton)
   - [ ] [VCR](https://github.com/vcr/vcr) (@davydovanton)
