@@ -28,6 +28,9 @@ This means we want to ensure common libraries work well with Hanami,
 ### API's
   - [ ] API documentation
   - [ ] JSON response
+    - [ ] [Jbuilder](https://github.com/vladfaust/hanami-jbuilder)
+    - [ ] roar
+  - [ ] [JSON API™](http://jsonapi-rb.org/) (@beauby)
 
 ### File Uploads
   - [ ] [hanami-shrine](https://github.com/katafrakt/hanami-shrine)
