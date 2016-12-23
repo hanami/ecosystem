@@ -45,6 +45,8 @@ This means we want to ensure common libraries work well with Hanami,
 ### Server hosting
   - [ ] logging
   - [ ] deploying
+    - [ ] Heroku
+    - [ ] Capistrano?
   - [ ] server monitoring
 
 ### Background jobs
