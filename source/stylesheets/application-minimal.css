@@ -230,3 +230,14 @@ table.status th {
 table.status td {
   font-size: 16px;
 }
+
+div.explore {
+}
+
+div.explore h2 {
+  margin: 22px 0 40px;
+}
+
+div.explore h6 {
+  color: #343434;
+}
