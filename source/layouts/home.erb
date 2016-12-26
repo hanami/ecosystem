@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= partial 'head' %>
+  </head>
+  <body>
+    <%= partial 'navbar' %>
+
+    <div class="block app-block-intro">
+      <div class="container text-center">
+        <h1 class="block-title m-b-sm text-uppercase brand-name">Hanami</h1>
+        <p class="lead m-b-lg p-b-md">The web, with simplicity.</p>
+        <div class="app-block-cta">
+          <a href="#install" class="btn btn-primary m-t">Install v<%= hanami_version %></a>
+          <a href="/guides/getting-started" target="_blank" class="btn btn-default btn-outline m-t">Getting Started</a>
+        </div>
+        <img src="/images/home-background.jpg">
+      </div>
+    </div>
+
+    <div class="block block-bordered-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center m-b-lg">
+            <img class="img-circle" src="/images/logo.png" width="150px" height="150px">
+            <p class="lead m-x-auto">Hanami is a modern web framework for Ruby.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <ul class="featured-list">
+              <li class="m-b-lg">
+                <div class="featured-list-icon text-primary">
+                  <span class="icon icon-flash"></span>
+                </div>
+                <p class="featured-list-icon-text m-b-0"><strong>Fast response times</strong></p>
+                <p class="featured-list-icon-text">
+                  Hanami is optimized for speed. It returns responses in a matter of milliseconds. Take the full advantage of Content Delivery Networks to make your apps faster.
+                </p>
+              </li>
+
+              <li class="m-b-lg">
+                <div class="featured-list-icon text-primary">
+                  <span class="icon icon-feather"></span>
+                </div>
+                <p class="featured-list-icon-text m-b-0"><strong>Full-featured, but lightweight</strong></p>
+                <p class="featured-list-icon-text">
+                  Use the <strong>100+ features</strong> that we offer to build powerful products without compromising memory. Hanami consumes <strong>60% less memory</strong> than other full-featured Ruby frameworks.
+                </p>
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul class="featured-list">
+
+              <li class="m-b-lg">
+                <div class="featured-list-icon text-primary">
+                  <span class="icon icon-lock"></span>
+                </div>
+                <p class="featured-list-icon-text m-b-0"><strong>Secure by default</strong></p>
+                <p class="featured-list-icon-text">
+                  Deploy applications that rely on latest browser technologies such as Content Security Policy, X-Frame headers, automatic escaping to protect your users against the most common security threats.
+                </p>
+              </li>
+
+              <li class="m-b-lg">
+                <div class="featured-list-icon text-primary">
+                  <span class="icon icon-emoji-happy"></span>
+                </div>
+                <p class="featured-list-icon-text m-b-0"><strong>Simple and productive</strong></p>
+                <p class="featured-list-icon-text">
+                  Enjoy Hanami's simplicity of design and the minimalism of its components. Write flexible code in a matter of minutes, and make it easy to change for the future.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block block-bordered-lg block-overflow-hidden p-b-0 app-block-design">
+      <div class="container">
+        <div class="row pos-r">
+          <div class="col-sm-7 text-xs-center text-sm-left">
+            <a name="install"></a>
+            <p class="lead">
+              Download, Develop, Deploy in 5 minutes.
+            </p>
+            <div class="container">
+              <div class="row download-develop-deploy">
+                <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#download" aria-controls="download" role="tab" data-toggle="tab">Download</a></li>
+                    <li role="presentation"><a href="#develop" aria-controls="develop" role="tab" data-toggle="tab">Develop</a></li>
+                    <li role="presentation"><a href="#deploy" aria-controls="deploy" role="tab" data-toggle="tab">Deploy</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="download">
+                      <pre class="language-ruby plaintext"><code><span class="command">% gem install hanami</span>
+Successfully installed hanami-<%= hanami_version %>
+1 gem installed
+<br>
+<span class="command">% hanami new bookshelf</span>
+19 files successfully created
+                      </code></pre>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="develop">
+                      <pre class="language-ruby plaintext"><code><span class="command">% cd bookshelf &amp;&amp; bundle</span>
+Bundle complete! 9 Gemfile dependencies, 48 gems now installed.
+<br>
+<span class="command">% git add . &amp;&amp; git commit -m "Initial commit"</span>
+[master (root-commit) ecb3a75] Initial commit
+ 37 files changed, 527 insertions(+)
+                      </code></pre>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="deploy">
+                      <pre class="language-ruby plaintext"><code><span class="command">% heroku apps:create</span>
+Creating cherry-blossom-1234... done, stack is cedar-14
+https://cherry-blossom-1234.herokuapp.com/ | https://git.heroku.com/cherry-blossom-1234.git
+Git remote heroku added
+<br>
+<span class="command">% heroku config:add SERVE_STATIC_ASSETS=true</span>
+Setting SERVE_STATIC_ASSETS and restarting ⬢ cherry-blossom-1234... done, v2
+SERVE_STATIC_ASSETS: true
+<br>
+<span class="command">% git push heroku master</span>
+# ...
+remote: Verifying deploy... done.
+To https://git.heroku.com/cherry-blossom-1234.git
+ * [new branch]      master -&gt; master
+<br>
+<span class="command">% heroku open</span>
+Opening cherry-blossom-1234... done
+                      </code></pre>
+                    </div>
+                  </div>
+
+                  <div class="callout">
+                    <div class="callout-content">
+                      <strong>Build your first application now.</strong> It will take you only a few minutes to learn how to do it.
+                    </div>
+
+                    <div class="callout-secondary">
+                      <a href="/guides/getting-started" class="btn btn-sm btn-primary" target="_blank">Get started</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%= partial 'footer' %>
+  </body>
+</html>
