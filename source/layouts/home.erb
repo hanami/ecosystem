@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= partial 'head' %>
+  </head>
+  <body>
+    <%= partial 'navbar' %>
+
+    <div class="block app-block-intro">
+      <div class="container text-center">
+        <h1 class="block-title m-b-sm text-uppercase brand-name">Hanami</h1>
+        <p class="lead m-b-lg p-b-md">Explore Our Ecosystem</p>
+
+        <div class="app-block-cta">
+          <a href="/guides/" target="_blank" class="btn btn-primary m-t">View Guides</a>
+        </div>
+        <img src="/images/home-background.jpg">
+      </div>
+    </div>
+
+    <div class="block block-bordered-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center m-b-lg">
+            <h2 class="">Tutorials</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <ul class="featured-list">
+              <li class="m-b-lg">
+                <a href="#">
+                  <p class="featured-list-icon-text m-b-0"><strong>How to use authorization in your app</strong></p>
+                  <p class="featured-list-icon-text">
+                    Long text here
+                  </p>
+                </a>
+              </li>
+
+              <li class="m-b-lg">
+                <a href="#">
+                  <p class="featured-list-icon-text m-b-0"><strong>How to integrate other ORM's</strong></p>
+                  <p class="featured-list-icon-text">
+                    Long text here
+                  </p>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul class="featured-list">
+
+              <li class="m-b-lg">
+                <a href="#">
+                  <p class="featured-list-icon-text m-b-0"><strong>Working with fronent</strong></p>
+                  <p class="featured-list-icon-text">
+                    Long text here
+                  </p>
+                </a>
+              </li>
+
+              <li class="m-b-lg">
+                <a href="#">
+                  <p class="featured-list-icon-text m-b-0"><strong>Testing your application</strong></p>
+                  <p class="featured-list-icon-text">
+                    Long text here
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block block-bordered-lg block-overflow-hidden p-b-0 app-block-design">
+      <div class="container">
+        <div class="row pos-r">
+          <div class="col-sm-13 text-xs-center explore">
+            <h2 class="">Explore</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-2 m-b">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h6 class="text-uppercase">General</h6></li>
+                    <li><a href="#">Authentication</a></li>
+                    <li><a href="#">Authorization</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-2 m-b">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h6 class="text-uppercase">Testing</h6></li>
+                    <li><a href="#">Rspec</a></li>
+                    <li><a href="#">Minitest</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-2 m-b">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h6 class="text-uppercase">Assets</h6></li>
+                    <li><a href="#">webpack</a></li>
+                    <li><a href="#">React</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-2 m-b">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h6 class="text-uppercase">Background jobs</h6></li>
+                    <li><a href="#">Sidekiq</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-2 m-b">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h6 class="text-uppercase">Alternative ORM's</h6></li>
+                    <li><a href="#">rom</a></li>
+                    <li><a href="#">sequel</a></li>
+                    <li><a href="#">mongoid</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-2 m-b">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h6 class="text-uppercase">Other</h6></li>
+                    <li><a href="#">email preview</a></li>
+                    <li><a href="#">URL slugs</a></li>
+                    <li><a href="#">pagination</a></li>
+                    <li><a href="#">state machines</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%= partial 'footer' %>
+  </body>
+</html>
